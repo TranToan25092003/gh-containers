@@ -12,10 +12,10 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
-    container:
+    container: # use a container for the job
       image: node:16
 
-    services:
+    services: # define services to run alongside the job
       mongodb:
         image: mongo:latest
         env:
